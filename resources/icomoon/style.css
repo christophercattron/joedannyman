@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?twash3');
+  src:  url('fonts/icomoon.eot?twash3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?twash3') format('truetype'),
+    url('fonts/icomoon.woff?twash3') format('woff'),
+    url('fonts/icomoon.svg?twash3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+/* the following three lines of code remove the text-decoration properties set by the User Agent Style Sheet */
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-forgehub-brands:before {
+  content: "\e904";
+}
+.icon-halo-brands:before {
+  content: "\e903";
+}
+.icon-imgur-brands:before {
+  content: "\e901";
+}
+.icon-twitch-brands:before {
+  content: "\e902";
+}
+.icon-xbox-brands:before {
+  content: "\e900";
+}
