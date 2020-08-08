@@ -28,7 +28,6 @@
     width: 100%;
     text-align: center;
     position: relative;
-    top: 40px;
   }
   
 
@@ -55,11 +54,13 @@ nav{
     background: -webkit-linear-gradient(white, rgb(53,71,197));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 2em;
 }
 
 @media only screen and (max-width: 1096px) {
     #header-nav-title{
         text-align: center;
+        margin-left: 0;
     }
 }
 
@@ -424,14 +425,14 @@ nav{
 
   /* PARALLAX */
 
-span.border{
+a.border{
   font-size:25px;
   color: #f7f7f7;
   background-color:transparent;
   transition: all 700ms linear 100ms;
 }
 
-span.border:hover{
+a.border:hover{
   font-size:25px;
   color: #f7f7f7 !important;
   border: 3px solid !important;
@@ -480,7 +481,7 @@ span.border:hover{
     color: #000;
   }
   
-  .caption span.border {
+  .caption a.border {
     background-color: #111;
     color: #fff;
     padding: 18px;
