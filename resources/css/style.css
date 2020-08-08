@@ -1,9 +1,14 @@
 
 
   body{
-      font-family: Roboto;
+    font-family: Roboto;
+    background-color: #33353d;
   }
 
+  main{
+    display: flex;
+  }
+  
   h2{
       color: white;
       font-family: Montserrat, sans-serif;
@@ -18,24 +23,89 @@
 /*about me*/
 
 .about-me{
-    display: flex;
-    background-color: #33353d;
+    justify-content: center;
+    width: 80%;
+    display: inline-block;
+    background-color: #26272b;
     color:whitesmoke;
-    border: 3px solid purple;
+   
+    padding-bottom: 1.25em;
+    margin: 3em;
+
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, purple, violet);
+    border-image-slice: 1;
+  
+
+    /*background-image: url("C:/Users/chris/programs/joedannyman/resources/images/joedannyman-background-colors.png")*/
 }
 
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+ 
+  /*
+.about-me-container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+*/
+
+
 .about-me h2{
-    text-align: center;
+    padding-top: 20px;
+    padding-left: 2em;
+    text-align: left;
+    transition: 1000ms ease-in;
 }
+
+.about-me h2:hover{
+    padding-left: 5em;
+}
+
+
 .about-me img{
-    width: 25%;
-    height: auto;
+    width: auto;
+    height: 350px;
 }
+
+
 
 .about-me p{
     max-width: 580px;
+    min-width: 250px;
     height: auto;
+    padding-right: 3em;
+    padding-left: 1.25em;
 }
+
+@media only screen and (max-width: 1096px) {
+    .about-me h2{
+        text-align: center;
+        font-size: 3em;
+        padding-left:0;
+    }
+    
+    .about-me p{
+        padding-right: 1.25em;
+    }
+
+    .about-me h2:hover{
+        padding-left: 2em;
+    }
+
+
+  }
+
+
 
 /* Footer */
 
@@ -43,7 +113,7 @@
 .site-footer
   {
     background-color:#26272b;
-    padding:45px 0 20px;
+    padding:20px 0 20px;
     font-size:15px;
     line-height:24px;
     
@@ -96,7 +166,7 @@
   {
     display:inline-block
   }
-  .site-footer .social-icons
+  /*.site-footer .social-icons
   {
     text-align:right
   }
@@ -110,6 +180,7 @@
     border-radius:100%;
     background-color:#33353d
   }
+  */
   .copyright-text
   {
     margin:0;
@@ -133,11 +204,15 @@
       text-align:center
     }
   }
+
+
   .social-icons
   {
     padding-left:0;
     margin-bottom:0;
-    list-style:none
+    list-style:none;
+
+
   }
   .social-icons li
   {
@@ -153,7 +228,7 @@
     font-size:13px
   }
   .social-icons a{
-    background-color:#eceeef;
+    background-color:#33353d;
     color:#818a91;
     font-size:16px;
     display:inline-block;
