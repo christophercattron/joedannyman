@@ -19,15 +19,25 @@
 
 .about-me{
     display: flex;
-
+    background-color: #33353d;
+    color:whitesmoke;
+    border: 3px solid purple;
 }
 
-.about-me-img{
+.about-me h2{
+    text-align: center;
+}
+.about-me img{
     width: 25%;
     height: auto;
 }
 
-/* Footer (see above for AboutMe) */
+.about-me p{
+    max-width: 580px;
+    height: auto;
+}
+
+/* Footer */
 
 
 .site-footer
@@ -36,7 +46,7 @@
     padding:45px 0 20px;
     font-size:15px;
     line-height:24px;
-    color:whitesmoke;
+    
   }
   .site-footer hr
   {
