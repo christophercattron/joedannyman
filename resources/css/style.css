@@ -518,7 +518,10 @@ a.border:hover{
   padding-top:30px;
   height:0;
   overflow:hidden;
+  box-shadow: 10px 10px 50px grey;
+  opacity:20%;
 }
+
 .yt-container iframe, .yt-container object, .yt-container embed {
   position:absolute;
   top:0;
@@ -527,6 +530,9 @@ a.border:hover{
   height:100%;
 }
 
+.yt-container:hover{
+  opacity:80%;
+}
   
 
 
