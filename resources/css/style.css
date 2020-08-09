@@ -477,6 +477,13 @@ a.border:hover{
     /* jdm-work-it image is from circa 06.16.2008 */
     min-height: 700px;
   }
+
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-end {
+      width: 100%;
+      height: auto;
+    }
+  }
   
   .caption {
     position: absolute;
@@ -502,13 +509,13 @@ a.border:hover{
     color: #111;
   }
   
-  /* Turn off parallax scrolling for tablets and phones */
+  /* Turn off parallax scrolling for tablets and phones 
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
     }
   }
-
+*/
 
 /*Youtube imbed*/
 
@@ -578,6 +585,7 @@ a.border:hover{
     z-index: 1;
   }
   
+  /*
   @media (pointer: coarse) and (hover: none) {
     header {
       background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
@@ -586,4 +594,4 @@ a.border:hover{
       display: none;
     }
   }
-
+*/
