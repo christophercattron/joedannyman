@@ -478,12 +478,6 @@ a.border:hover{
     min-height: 700px;
   }
 
-  @media only screen and (max-device-width: 1024px) {
-    .bgimg-end {
-      width: 100%;
-      height: auto;
-    }
-  }
   
   .caption {
     position: absolute;
@@ -585,13 +579,13 @@ a.border:hover{
     z-index: 1;
   }
   
-  /*
+  
   @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      background: url("../images/deer-season.jpg") black no-repeat center center scroll;
     }
     header video {
       display: none;
     }
   }
-*/
+
