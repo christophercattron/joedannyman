@@ -503,11 +503,16 @@ a.border:hover{
     color: #111;
   }
   
-  /* Turn off parallax scrolling for tablets and phones */
+  /* Turn off parallax scrolling for tablets and phones --- and make h1 header responsive */
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-end {
       background-attachment: scroll;
     }
+
+    h1.display-3{
+      font-size: 1.25em;
+    } 
+
   }
 
 
