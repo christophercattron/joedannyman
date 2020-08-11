@@ -462,23 +462,22 @@ a.border:hover{
   
   }
   .bgimg-1 {
-    background-image: url("../images/guardian/guardian-hbd-halo-3.png");
+    background-image: url("../images/bday/banner/joe-banner\ \(1\).JPG");
     min-height: 400px;
   }
   
   .bgimg-2 {
-    background-image: url("../images/ascension/img1.png");
+    background-image: url("../images/bday/banner/joe-banner\ \(2\).JPG");
     min-height: 400px;
   }
   
   .bgimg-3 {
-    background-image: url("../images/chillout/chill-out-cs.png");
+    background-image: url("../images/bday/banner/joe-banner\ \(3\).JPG");
     min-height: 400px;
   }
 
   .bgimg-end {
-    background-image: url("../images/jdm-work-it.jpg");
-    /* jdm-work-it image is from circa 06.16.2008 */
+    background-image: url("../images/bday/banner/joe-banner\ \(4\).JPG");
     min-height: 700px;
   }
 
@@ -595,7 +594,7 @@ a.border:hover{
   
   @media (pointer: coarse) and (hover: none) {
     header {
-      background: url("../images/deer-season.jpg") black no-repeat center center scroll;
+      background: url("../images/bday/banner/joe-banner-top.JPG") black no-repeat center center scroll;
     }
     header video {
       display: none;
