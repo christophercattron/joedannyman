@@ -19,7 +19,90 @@
         <link rel="shortcut icon" href="./resources/joe-favicon.ico" type="image/x-icon">
         <link rel="icon" href="./resources/joe-favicon.ico" type="image/x-icon">
 
+
+        <!--Style for responsive gallery-->
+        <style>
+          * {
+            box-sizing: border-box;
+          }
         
+          
+          .header {
+            text-align: center;
+            padding: 32px;
+          }
+          
+          .gallery{
+            margin: 30px 30px;
+          }
+
+
+          .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          
+          /* Create four equal columns that sits next to each other */
+          .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+          
+          /* Responsive layout - makes a two column-layout instead of four columns */
+          @media screen and (max-width: 800px) {
+            .column {
+              -ms-flex: 50%;
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+          
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column {
+              -ms-flex: 100%;
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
+          
+          /* Quote image style*/
+          .c-quote{
+              transition: 1000ms ease-in-out;
+          }
+          
+          .c-quote:hover{
+              filter: brightness(1.05);
+              transform: scale(1.15);
+          }
+          
+          /*image grow style*/
+          .c-gallery-img{
+              transition: 1000ms ease-in-out;
+          }
+          
+          .c-gallery-img:hover{
+              filter: brightness(1.05);
+              transform: scale(1.15);
+          }
+
+
+          </style>
+
+
+
+
 
 
     </head>
@@ -30,69 +113,132 @@
             </nav>
             
             <!--START Video Overlay Header-->
-            <!--
+            
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="./resources/videos/neat-stuff/elite-halo-5.mp4" type="video/mp4">
+              <source src="./resources/videos/joe-birthday/joe-kicked-in-nuts.mp4" type="video/mp4">
             </video>
             <div class="container h-100">
               <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                  <h1 class="display-3">JoeDannyMan</h1>
-                  <p class="lead mb-0">Forge Savant, Halo Simp, Meme Lord.</p>
+                  <h1 class="display-3">Happy Birthday Joe!</h1>
+                  <!--<p class="lead mb-0">Forge Savant, Halo Simp, Meme Lord.</p>-->
                 </div>
               </div>
             </div>
-          -->
+          
             <!--END Video Overlay Header-->
 
         </header>
         <main>
 
-                  
-
+                           <!--HBD Joe Message-->  
+                           <div id="joe-fav-gallery">
+                            <!--<h2>Happy Birthday Joe!</h2>-->
+                            <h4 style="margin-bottom:3em;">You're an awesome friend, and we've shared some of the best memories together. Here is a few of our favorite "Joe" moments.</h4>
+                            <h5>With love and meme energy,</h5>
+                            <h5><em>Some Nutts</em></h5>
+                          </div>
 
 
 
           <!--START responsive gallery-->
-
-          <!-- Photo Grid -->
-          <div class="row"> 
+          <div class="row gallery"> 
             <div class="column">
-              <img src="./resources/images/joe-birthday/joe-orifice.JPG" style="width:100%">
-              <img src="./resources/images/joe-birthday/joe-western-turkey-cave.JPG" style="width:100%">
-              <img src="./resources/images/joe-birthday/Lightsaber_Pic_1.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
-              <img src="/w3images/nature.jpg" style="width:100%">
-              <img src="/w3images/mist.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
+              <img src="./resources/images/bday/joe (1).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (2).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (3).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (4).JPG" style="width:100%" class="c-gallery-img">
+              <img class="c-quote" src="./resources/images/quotes/q1.png" style="width:100%">
+              <img src="./resources/images/bday/joe (5).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (6).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (7).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (8).JPG" style="width:100%" class="c-gallery-img">
             </div>
             <div class="column">
-              <img src="/w3images/underwater.jpg" style="width:100%">
-              <img src="/w3images/ocean.jpg" style="width:100%">
-              <img src="/w3images/wedding.jpg" style="width:100%">
-              <img src="/w3images/mountainskies.jpg" style="width:100%">
-              <img src="/w3images/rocks.jpg" style="width:100%">
-              <img src="/w3images/underwater.jpg" style="width:100%">
+              <img src="./resources/images/bday/joe (9).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (10).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (11).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (12).JPG" style="width:100%" class="c-gallery-img">
+              <img class="c-quote" src="./resources/images/quotes/q2.png" style="width:100%">
+              <img src="./resources/images/bday/joe (13).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (14).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (15).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (16).JPG" style="width:100%" class="c-gallery-img">
             </div>  
             <div class="column">
-              <img src="/w3images/wedding.jpg" style="width:100%">
-              <img src="/w3images/rocks.jpg" style="width:100%">
-              <img src="/w3images/falls2.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
-              <img src="/w3images/nature.jpg" style="width:100%">
-              <img src="/w3images/mist.jpg" style="width:100%">
-              <img src="/w3images/paris.jpg" style="width:100%">
+              <img src="./resources/images/bday/joe (17).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (18).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (19).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (20).JPG" style="width:100%" class="c-gallery-img">
+              <img class="c-quote" src="./resources/images/quotes/q3.png" style="width:100%">
+              <img src="./resources/images/bday/joe (21).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (22).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (23).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (24).JPG" style="width:100%" class="c-gallery-img">
             </div>
             <div class="column">
-              <img src="/w3images/underwater.jpg" style="width:100%">
-              <img src="/w3images/ocean.jpg" style="width:100%">
-              <img src="/w3images/wedding.jpg" style="width:100%">
-              <img src="/w3images/mountainskies.jpg" style="width:100%">
-              <img src="/w3images/rocks.jpg" style="width:100%">
-              <img src="/w3images/underwater.jpg" style="width:100%">
+              <img src="./resources/images/bday/joe (25).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (26).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (27).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (28).JPG" style="width:100%" class="c-gallery-img">
+              <img class="c-quote" src="./resources/images/quotes/q4.png" style="width:100%">
+              <img src="./resources/images/bday/joe (29).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (30).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (31).JPG" style="width:100%" class="c-gallery-img">
+              <img src="./resources/images/bday/joe (32).JPG" style="width:100%" class="c-gallery-img">
             </div>
           </div>
+          
+          
+          <div class="row"> 
+              <div class="column">
+                <img src="./resources/images/bday/joe (33).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (34).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (35).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (36).JPG" style="width:100%" class="c-gallery-img">
+                <img class="c-quote" src="./resources/images/quotes/q5.png" style="width:100%">
+                <img src="./resources/images/bday/joe (37).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (38).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (39).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (40).JPG" style="width:100%" class="c-gallery-img">
+              </div>
+              <div class="column">
+                <img src="./resources/images/bday/joe (41).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (42).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (43).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (44).JPG" style="width:100%" class="c-gallery-img">
+                <img class="c-quote" src="./resources/images/quotes/q6.png" style="width:100%">
+                <img src="./resources/images/bday/joe (45).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (46).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (47).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (48).JPG" style="width:100%" class="c-gallery-img">
+              </div>  
+              <div class="column">
+                <img src="./resources/images/bday/joe (49).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (50).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (51).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (52).JPG" style="width:100%" class="c-gallery-img">
+                <img class="c-quote" src="./resources/images/quotes/q7.png" style="width:100%">
+                <img src="./resources/images/bday/joe (53).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (54).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (55).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (56).JPG" style="width:100%" class="c-gallery-img">
+              </div>
+              <div class="column">
+                <img src="./resources/images/bday/joe (57).JPG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (1).jpeg" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (1).PNG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (2).PNG" style="width:100%" class="c-gallery-img">
+                <img class="c-quote" src="./resources/images/quotes/q8.png" style="width:100%">
+                <img src="./resources/images/bday/joe (3).PNG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (4).PNG" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (5).png" style="width:100%" class="c-gallery-img">
+                <img src="./resources/images/bday/joe (58).JPG" style="width:100%" class="c-gallery-img">
+              </div>
+            </div>
+          
+          
           <!--END responsive gallery-->
 
 
@@ -101,81 +247,7 @@
 
 
 
-         <!--HBD Joe Message-->  
-                <div id="joe-fav-gallery">
-                  <h2>Happy Birthday Joe!</h2>
-                  <h4 style="margin-bottom:3em;">You're an awesome friend, and we've shared some of the best memories together. Here is a few of our favorite "Joe" moments.</h4>
-                  <h5>With love and meme energy,</h5>
-                  <h5><em>Some Nutts</em></h5>
-                </div>
 
-        
-            <!--Start simple gallery pure css code-->
-
-            <div class="container-all simple-gallery">
-              <div class="container">
-                  <img src="./resources/images/joe-birthday/20171021_142624.jpg" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="./resources/images/joe-birthday/20171021_150112.jpg" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="./resources/images/joe-birthday/Copy of IMG_0433.PNG" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="./resources/images/joe-birthday/joe-what-do-you-meme.JPG" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2FznWrU" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2zd3HLf" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-          </div>
-          <div class="container-all">
-              <div class="container">
-                  <img src="https://bit.ly/2PvlS8Z" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2PXNumM" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2KbUszm" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2FnhYul" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2FznWrU" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-              <div class="container">
-                  <img src="https://bit.ly/2zd3HLf" alt="" />
-                  <span class="title">Lorem ipsum dolor</span>
-                  <span class="text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
-              </div>
-          </div>
 
 
 

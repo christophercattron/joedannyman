@@ -548,18 +548,18 @@ a.border:hover{
 
   /* VIDEO OVERLAY */
 
-  /*REMOVE VIDEO OVERLAY header CODE
+
 
   header {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 850px;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
   }
   
-  */
+  
 
   header video {
     position: absolute;
