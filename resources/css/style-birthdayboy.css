@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 @font-face {
@@ -452,7 +453,7 @@ a.border:hover{
     color: #777;
   }
   
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-end {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-bottom {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -462,23 +463,38 @@ a.border:hover{
   
   }
   .bgimg-1 {
-    background-image: url("../images/bday/banner/joe-banner\ \(1\).JPG");
-    min-height: 400px;
+    background-image: url("../images/bday/banner/joe-banner\ \(1\).jpg");
+    min-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   .bgimg-2 {
     background-image: url("../images/bday/banner/joe-banner\ \(2\).JPG");
-    min-height: 400px;
+    min-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   .bgimg-3 {
     background-image: url("../images/bday/banner/joe-banner\ \(3\).JPG");
-    min-height: 400px;
+    min-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
-  .bgimg-end {
+  .bgimg-4 {
     background-image: url("../images/bday/banner/joe-banner\ \(4\).JPG");
-    min-height: 700px;
+    min-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .bgimg-bottom {
+    background-image: url("../images/bday/banner/joe-banner-bottom.jpg");
+    min-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   
@@ -508,7 +524,7 @@ a.border:hover{
   
   /* Turn off parallax scrolling for tablets and phones --- and make h1 header responsive */
   @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-end {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-bottom {
       background-attachment: scroll;
     }
 
@@ -600,84 +616,3 @@ a.border:hover{
       display: none;
     }
   }
-
-
-
-
-
-  /* Simple gallery pure css code style */
- 
-  .container-all{
-    width: fit-content;
-    margin: 20px auto;
-    height: auto;
-  }
-  .container{
-    width: calc(33% - 6px);
-    overflow:hidden;
-    height: fit-content;
-    margin:3px;
-    padding: 0;
-    display:block;
-    position:relative;
-    float:left;
-  }
-  .simple-gallery img{
-    width: 100%;
-    transition-duration: .3s;
-    max-width: 100%;
-    display:block;
-    overflow:hidden;
-    cursor:pointer;
-  }
-  .title{
-    position:absolute;
-    display:block;
-    cursor:pointer;
-    top: 35%;
-    display: none;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 1.6em;
-    text-shadow: 1px 5px 10px black;
-    transition-duration: .3s;
-  }
-  .text{
-    position:absolute;
-    top: 70%;
-    cursor:pointer;
-    max-width: 80%;
-    text-align:center;
-    left: 50%;
-    text-shadow: 1px 5px 10px black;
-    font-size: 1em;
-    display:none;
-    margin-right: -50%;
-    transition-duration: .3s;
-    transform: translate(-50%, -50%) 
-  }
-  .container:hover img{
-    transform: scale(1.2);
-    transition-duration: .3s;
-    filter: grayscale(50%);
-    opacity: .7;
-  }
-  .container:hover span{
-    color:white;
-    display: block;
-    transition-duration: .3s;
-  }
-  @media only screen and (max-width: 900px) {
-      .container {
-          width: calc(50% - 6px);
-      }
-  }
-  @media only screen and (max-width: 400px) {
-      .container {
-          width: 100%;
-      }
-  }
-
-
