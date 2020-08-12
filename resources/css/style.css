@@ -220,6 +220,19 @@ nav{
 
 /* Footer */
 
+          /*joe birthday icon grow on hover*/
+          .hbd-img{
+            transition: 1000ms ease-in-out;
+        }
+        
+        .hbd-img:hover{
+            filter: brightness(1.05);
+            transform: scale(1.55);
+        }
+
+
+
+        
 
 .site-footer
   {
