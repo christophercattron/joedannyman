@@ -72,6 +72,69 @@
           <!--END Play sound on click js-->
 
 
+
+          <!--START Pop-up message style & js-->
+          <style>
+            /* Popup container - can be anything you want */
+            .popup {
+              position: relative;
+              display: inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+            
+            /* The actual popup */
+            .popup .popuptext {
+              visibility: hidden;
+              width: 160px;
+              background-color: #555;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: 125%;
+              left: 50%;
+              margin-left: -80px;
+            }
+            
+            /* Popup arrow */
+            .popup .popuptext::after {
+              content: "";
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+              border-width: 5px;
+              border-style: solid;
+              border-color: #555 transparent transparent transparent;
+            }
+            
+            /* Toggle this class - hide and show the popup */
+            .popup .show {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+            
+            /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+              from {opacity: 0;} 
+              to {opacity: 1;}
+            }
+            
+            @keyframes fadeIn {
+              from {opacity: 0;}
+              to {opacity:1 ;}
+            }
+            </style>
+
+          <!--END Pop-up message style & js-->
+
     </head>
     <body>
         <header>
@@ -199,33 +262,6 @@
 
 
 
-                <!--START js automatic slideshow code
-                <h2 class="w3-center">Automatic Slideshow</h2>
-
-                <div class="w3-content w3-section">
-                  <img class="mySlides" src="./resources/images/jdm-work-it.jpg" >
-                  <img class="mySlides" src="./resources/images/deer-season.jpg" style="width:100%; min-height: 700px">
-                  <img class="mySlides" src="img_chicago.jpg" style="width:100%; min-height: 700px">
-                </div>
-                
-                <script>
-                var myIndex = 0;
-                carousel();
-                
-                function carousel() {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  myIndex++;
-                  if (myIndex > x.length) {myIndex = 1}    
-                  x[myIndex-1].style.display = "block";  
-                  setTimeout(carousel, 5000); // Change image every 5 seconds
-                }
-                </script>
-                END js automatic slideshow code-->
-
 
             <!--END PARALLAX CODE-->
 
@@ -297,12 +333,33 @@
         <footer class="site-footer">
             
 
+
+
+
+
+
+
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-sm-6 col-xs-12">
                         <p class="copyright-text">
-                          <a href="javascript:delay('birthdayboy.html')" onclick="gruntbirthdaysound.playclip()"><img class="hbd-img" style="height: 1em; width: 1em;" src="./resources/images/bday/gbp.jpg">
-                          </a>     Copyright &copy; 2020 All Rights Reserved by 
+                          
+                          <!--START Pop-up code-->
+          <div class="popup" onclick="myFunction()"><a href="javascript:delay('birthdayboy.html')" onclick="gruntbirthdaysound.playclip()"><img class="hbd-img" style="height: 1em; width: 1em;" src="./resources/images/bday/gbp.jpg">
+            <span class="popuptext" id="myPopup">Please wait—loading the birthday zone!</span>
+          </div>
+          
+          <script>
+          // When the user clicks on div, open the popup
+          function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+          }
+          </script>
+<!--END Pop-up code-->
+                          
+                          
+                          Copyright &copy; 2020 All Rights Reserved by 
                           <a href="https://www.linkedin.com/in/christopher-cattron/">Christopher Cattron
                           </a>.
                         </p>
