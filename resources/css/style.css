@@ -617,7 +617,7 @@ a.border:hover{
     With the help of position property, We will cover the all of page viewport with photo.*/
 
         .crossfade > figure {
-          animation: imageAnimation 30s linear infinite 0s;
+          animation: imageAnimation 96s linear infinite 0s;
           backface-visibility: hidden;
           background-size: cover;
           background-position: center center;
@@ -634,40 +634,112 @@ a.border:hover{
           background-attachment: fixed;
         }
 
+        /*Make banner only the height of the parallax window*/
+        .crossfade{
+          height: 715px;
+        }
+
 
     /*Now we will define the background photos for all the figure element. 
     So that each following slider image will appear after a delay of time. '
     We did addition of plus 6 sec for each image.*/
 
         .crossfade > figure:nth-child(1) {
-          background-image: url('../images/jdm-work-it.jpg');
+          background-image: url('../images/screenshots/001-jdm-work-it-06.16.2008.jpg');
           min-height: 700px;
           
         }
         .crossfade > figure:nth-child(2) {
           animation-delay: 6s;
-          background-image: url('../images/deer-season.jpg');
+          background-image: url('../images/screenshots/002-i-am-JOEDANNYMAN...\ -08.09.2010.jpg');
           min-height: 700px;
           top: -715px;
         }
         .crossfade > figure:nth-child(3) {
           animation-delay: 12s;
-          background-image: url('../images/guardian/guardian-2.png');
+          background-image: url('../images/screenshots/003-thor-and-joe-08.09.2010.jpg');
           min-height: 700px;
           top: -1430px;
         }
         .crossfade > figure:nth-child(4) {
           animation-delay: 18s;
-          background-image: url('../images/ro-sham-bo/rsb-3.png');
+          background-image: url('../images/screenshots/004-the-end-is-near-...so-have-fun-08.09.2010.jpg');
           min-height: 700px;
           top: -2145px;
         }
         .crossfade > figure:nth-child(5) {
           animation-delay: 24s;
-          background-image: url('../images/odst-holdout/forge-world.jpg');
+          background-image: url('../images/screenshots/005-joedanny-...man-of-action-08.09.2010.jpg');
           min-height: 700px;
           top: -2860px;
         }
+        .crossfade > figure:nth-child(6) {
+          animation-delay: 30s;
+          background-image: url('../images/screenshots/006-halo-4-06.07.2011.jpg');
+          min-height: 700px;
+          top: -3575px;
+        }
+        .crossfade > figure:nth-child(7) {
+          animation-delay: 36s;
+          background-image: url('../images/screenshots/007-forger-06.28.2010.jpg');
+          min-height: 700px;
+          top: -4290px;
+        }
+        .crossfade > figure:nth-child(8) {
+          animation-delay: 42s;
+          background-image: url('../images/screenshots/008-hey-there-03.21.2011.jpg');
+          min-height: 700px;
+          top: -5005px;
+        }
+        .crossfade > figure:nth-child(9) {
+          animation-delay: 48s;
+          background-image: url('../images/screenshots/009-shadows-06.28.2010.jpg');
+          min-height: 700px;
+          top: -5720px;
+        }
+        .crossfade > figure:nth-child(10) {
+          animation-delay: 54s;
+          background-image: url('../images/screenshots/010-face-melt-06.28.2010.jpg');
+          min-height: 700px;
+          top: -6435px;
+        }
+        .crossfade > figure:nth-child(11) {
+          animation-delay: 60s;
+          background-image: url('../images/screenshots/011-fire-ice-07.21.2008.jpg');
+          min-height: 700px;
+          top: -7150px;
+        }
+        .crossfade > figure:nth-child(12) {
+          animation-delay: 66s;
+          background-image: url('../images/screenshots/012-shot-7-06.19.2011.jpg');
+          min-height: 700px;
+          top: -7865px;
+        }
+        .crossfade > figure:nth-child(13) {
+          animation-delay: 72s;
+          background-image: url('../images/screenshots/013-final-push-06.24.2010.jpg');
+          min-height: 700px;
+          top: -8580px;
+        }
+        .crossfade > figure:nth-child(14) {
+          animation-delay: 78s;
+          background-image: url('../images/screenshots/014-joedannyman-whatchu-lookin-at-03.18.2010.jpg');
+          min-height: 700px;
+          top: -9295px;
+        }
+        .crossfade > figure:nth-child(15) {
+          animation-delay: 84s;
+          background-image: url('../images/screenshots/015-look-ma-12.12.2010.jpg');
+          min-height: 700px;
+          top: -10010px;
+        }
+        .crossfade > figure:nth-child(16) {
+          animation-delay: 90s;
+          background-image: url('../images/screenshots/016-deer-season-11.17.2008.jpg');
+          min-height: 700px;
+          top: -10725px;
+        }
+
 
 
     /*creates @keyframes animation */
@@ -676,14 +748,14 @@ a.border:hover{
             animation-timing-function: ease-in;
             opacity: 0;
           }
-          8% {
+          2.13% {
             animation-timing-function: ease-out;
             opacity: 1;
           }
-          17% {
+          4.53% {
             opacity: 1
           }
-          25% {
+          6.67% {
             opacity: 0
           }
           100% {

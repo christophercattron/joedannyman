@@ -1,345 +1,294 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags for bootstrap -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS for styling and layout-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-        <title>Happy Birthday Joe!</title>
-        <link href="resources/css/style-birthdayboy.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <!--links to fontawesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-        <!--link to custom imgur icon font--->
-        <link rel="stylesheet" href="resources/icomoon/style.css" type="text/css">
-        <!--link to joe-favicon-->
-        <link rel="shortcut icon" href="./resources/joe-favicon.ico" type="image/x-icon">
-        <link rel="icon" href="./resources/joe-favicon.ico" type="image/x-icon">
-
-
-        <!--Style for responsive gallery-->
-        <style>
-          * {
-            box-sizing: border-box;
-          }
-        
-          
-          .header {
-            text-align: center;
-            padding: 32px;
-          }
-          
-          .gallery{
-            margin: 30px 30px;
-          }
-
-
-          .row {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-          }
-          
-          /* Create four equal columns that sits next to each other */
-          .column {
-            -ms-flex: 25%; /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-          }
-          
-          .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-          }
-          
-          /* Responsive layout - makes a two column-layout instead of four columns */
-          @media screen and (max-width: 800px) {
-            .column {
-              -ms-flex: 50%;
-              flex: 50%;
-              max-width: 50%;
-            }
-          }
-          
-          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 600px) {
-            .column {
-              -ms-flex: 100%;
-              flex: 100%;
-              max-width: 100%;
-            }
-          }
-          
-          /* Quote image style*/
-          .c-quote{
-              transition: 1000ms ease-in-out;
-          }
-          
-          .c-quote:hover{
-              filter: brightness(1.05);
-              transform: scale(1.15);
-          }
-          
-          /*image grow style*/
-          .c-gallery-img{
-              transition: 1000ms ease-in-out;
-              width: 100%;
-          }
-          
-          .c-gallery-img:hover{
-              filter: brightness(1.05);
-              transform: scale(1.15);
-          }
-
-
-          </style>
-
-
-
-
-
-
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h2 id="header-nav-title"><a href="./index.html">JoeDannyMan</a></h2>
-            </nav>
-            
-            <!--START Video Overlay Header-->
-            
-            <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="./resources/videos/joe-birthday/joe-header.mp4" type="video/mp4">
-            </video>
-            <div class="container h-100">
-              <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
+   <head>
+      <!-- Required meta tags for bootstrap -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS for styling and layout-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <title>Happy Birthday Joe!</title>
+      <link href="resources/css/style-birthdayboy.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <!--links to fontawesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--link to custom imgur icon font--->
+      <link rel="stylesheet" href="resources/icomoon/style.css" type="text/css">
+      <!--link to joe-favicon-->
+      <link rel="shortcut icon" href="./resources/joe-favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./resources/joe-favicon.ico" type="image/x-icon">
+      <!--Style for responsive gallery-->
+      <style>
+         * {
+         box-sizing: border-box;
+         }
+         .header {
+         text-align: center;
+         padding: 32px;
+         }
+         .gallery{
+         margin: 30px 30px;
+         }
+         .row {
+         display: -ms-flexbox; /* IE10 */
+         display: flex;
+         -ms-flex-wrap: wrap; /* IE10 */
+         flex-wrap: wrap;
+         padding: 0 4px;
+         }
+         /* Create four equal columns that sits next to each other */
+         .column {
+         -ms-flex: 25%; /* IE10 */
+         flex: 25%;
+         max-width: 25%;
+         padding: 0 4px;
+         }
+         .column img {
+         margin-top: 8px;
+         vertical-align: middle;
+         width: 100%;
+         }
+         /* Responsive layout - makes a two column-layout instead of four columns */
+         @media screen and (max-width: 800px) {
+         .column {
+         -ms-flex: 50%;
+         flex: 50%;
+         max-width: 50%;
+         }
+         }
+         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+         @media screen and (max-width: 600px) {
+         .column {
+         -ms-flex: 100%;
+         flex: 100%;
+         max-width: 100%;
+         }
+         }
+         /* Quote image style*/
+         .c-quote{
+         transition: 1000ms ease-in-out;
+         }
+         .c-quote:hover{
+         filter: brightness(1.05);
+         transform: scale(1.15);
+         }
+         /*image grow style*/
+         .c-gallery-img{
+         transition: 1000ms ease-in-out;
+         width: 100%;
+         }
+         .c-gallery-img:hover{
+         filter: brightness(1.05);
+         transform: scale(1.15);
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <h2 id="header-nav-title"><a href="./index.html">JoeDannyMan</a></h2>
+         </nav>
+         <!--START Video Overlay Header-->
+         <div class="overlay"></div>
+         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./resources/videos/joe-birthday/joe-header.mp4" type="video/mp4">
+         </video>
+         <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+               <div class="w-100 text-white">
                   <h1 class="display-3">Happy Birthday Joe!</h1>
                   <!--<p class="lead mb-0">Forge Savant, Halo Simp, Meme Lord.</p>-->
-                </div>
-              </div>
+               </div>
             </div>
-          
-            <!--END Video Overlay Header-->
-
-        </header>
-        <main>
-
-                           <!--HBD Joe Message-->  
-                           <div id="joe-fav-gallery">
-                            <!--<h2>Happy Birthday Joe!</h2>-->
-                            <h4 style="margin-bottom:3em;">You're an awesome friend, and we've shared some of the best memories together. Here is a few of our favorite "Joe" moments.</h4>
-                            <h5>With love and meme energy,</h5>
-                            <h5><em>Some Nutts</em></h5>
-                          </div>
-
-          <!--START Parallax img-->
-          <div class="bgimg-1"></div>
-          <!--END Parallax img-->
-
-          <!--START responsive gallery-->
-          <div class="row gallery"> 
+         </div>
+         <!--END Video Overlay Header-->
+      </header>
+      <main>
+         <!--HBD Joe Message-->  
+         <div id="joe-fav-gallery">
+            <!--<h2>Happy Birthday Joe!</h2>-->
+            <h4 style="margin-bottom:3em;">You're an awesome friend, and we've shared some of the best memories together. Here is a few of our favorite "Joe" moments.</h4>
+            <h5>With love and meme energy,</h5>
+            <h5><em>The Nutts</em></h5>
+         </div>
+         <!--START Parallax img-->
+         <div class="bgimg-1"></div>
+         <!--END Parallax img-->
+         <!--START responsive gallery-->
+         <div class="row gallery">
             <div class="column">
-              <img src="./resources/images/bday/joe (1).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (2).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (3).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (4).JPG"  class="c-gallery-img">
-              <img class="c-quote" src="./resources/images/quotes/q1.png" style="width:100%">
-              
+               <img src="./resources/images/bday/joe (1).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (2).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (3).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (4).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q1.png" style="width:100%">
             </div>
             <div class="column">
-              <img class="c-quote" src="./resources/images/quotes/q2.png" style="width:100%">
-              <img src="./resources/images/bday/joe (5).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (6).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (7).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (8).JPG"  class="c-gallery-img">
-
-   
-            </div>  
-            <div class="column">
-              <img src="./resources/images/bday/joe (9).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (10).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (11).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (12).JPG"  class="c-gallery-img">
-              <img class="c-quote" src="./resources/images/quotes/q3.png" style="width:100%">
-
+               <img class="c-quote" src="./resources/images/quotes/q2.png" style="width:100%">
+               <img src="./resources/images/bday/joe (5).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (6).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (7).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (8).JPG"  class="c-gallery-img">
             </div>
             <div class="column">
-              <img src="./resources/images/bday/joe (13).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (14).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (15).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (16).JPG"  class="c-gallery-img">
- 
-
-            </div>
-          </div>
-                    
-          <!--START Parallax img-->
-          <div class="bgimg-2"></div>
-          <!--END Parallax img-->
-          
-          <div class="row gallery"> 
-              <div class="column">
-                <img class="c-quote" src="./resources/images/quotes/q4.png" style="width:100%">
-                <img src="./resources/images/bday/joe (17).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (18).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (19).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (20).JPG"  class="c-gallery-img">
-
-              </div>
-              <div class="column">
-                <img src="./resources/images/bday/joe (21).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (22).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (23).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (24).JPG"  class="c-gallery-img">
-                <img class="c-quote" src="./resources/images/quotes/q5.png" style="width:100%">
-
-              </div>  
-              <div class="column">
-                <img src="./resources/images/bday/joe (25).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (26).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (27).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (28).JPG"  class="c-gallery-img">
-
-              </div>
-              <div class="column">
-                <img src="./resources/images/bday/joe (29).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (30).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (31).JPG"  class="c-gallery-img">
-                <img src="./resources/images/bday/joe (32).JPG"  class="c-gallery-img">
-                <img class="c-quote" src="./resources/images/quotes/q6.png" style="width:100%">
-
-              </div>
-            </div>
-          
-          <!--START Parallax img-->
-          <div class="bgimg-3"></div>
-          <!--END Parallax img-->
-
-          <div class="row gallery"> 
-            <div class="column">
-              <img src="./resources/images/bday/joe (33).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (34).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (35).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (36).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (37).JPG"  class="c-gallery-img">
-              <img class="c-quote" src="./resources/images/quotes/q7.png" style="width:100%">
-
+               <img src="./resources/images/bday/joe (9).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (10).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (11).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (12).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q3.png" style="width:100%">
             </div>
             <div class="column">
-              <img src="./resources/images/bday/joe (38).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (39).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (40).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (41).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (42).JPG"  class="c-gallery-img">              
-              <img src="./resources/images/bday/joe (43).JPG"  class="c-gallery-img">
-            </div>  
+               <img src="./resources/images/bday/joe (13).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (14).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (15).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (16).JPG"  class="c-gallery-img">
+            </div>
+         </div>
+         <!--START Parallax img-->
+         <div class="bgimg-2"></div>
+         <!--END Parallax img-->
+         <div class="row gallery">
             <div class="column">
-
-              <img src="./resources/images/bday/joe (44).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (49).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (50).JPG"  class="c-gallery-img">              
-              <img src="./resources/images/bday/joe (51).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (52).JPG"  class="c-gallery-img">
-              <img class="c-quote" src="./resources/images/quotes/q8.png" style="width:100%">
-
+               <img class="c-quote" src="./resources/images/quotes/q4.png" style="width:100%">
+               <img src="./resources/images/bday/joe (17).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (18).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (19).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (20).JPG"  class="c-gallery-img">
             </div>
             <div class="column">
-              <img class="c-quote" src="./resources/images/quotes/q9.png" style="width:100%">
-
-              <img src="./resources/images/bday/joe (53).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (54).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (55).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (56).JPG"  class="c-gallery-img">
-
+               <img src="./resources/images/bday/joe (21).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (22).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (23).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (24).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q5.png" style="width:100%">
             </div>
-          </div>
-
-
+            <div class="column">
+               <img src="./resources/images/bday/joe (25).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (26).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (27).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (28).JPG"  class="c-gallery-img">
+            </div>
+            <div class="column">
+               <img src="./resources/images/bday/joe (29).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (30).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (31).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (32).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q6.png" style="width:100%">
+            </div>
+         </div>
+         <!--START Parallax img-->
+         <div class="bgimg-3"></div>
+         <!--END Parallax img-->
+         <div class="row gallery">
+            <div class="column">
+               <img src="./resources/images/bday/joe (33).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (34).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (35).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (36).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (37).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q7.png" style="width:100%">
+            </div>
+            <div class="column">
+               <img src="./resources/images/bday/joe (38).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (39).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (40).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (41).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (42).JPG"  class="c-gallery-img">              
+               <img src="./resources/images/bday/joe (43).JPG"  class="c-gallery-img">
+            </div>
+            <div class="column">
+               <img src="./resources/images/bday/joe (44).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (49).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (50).JPG"  class="c-gallery-img">              
+               <img src="./resources/images/bday/joe (51).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (52).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q8.png" style="width:100%">
+            </div>
+            <div class="column">
+               <img class="c-quote" src="./resources/images/quotes/q9.png" style="width:100%">
+               <img src="./resources/images/bday/joe (53).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (54).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (55).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (56).JPG"  class="c-gallery-img">
+            </div>
+         </div>
          <!--START Parallax img-->
          <div class="bgimg-4"></div>
          <!--END Parallax img-->
-
-          <div class="row gallery"> 
+         <div class="row gallery">
             <div class="column">
-              <img src="./resources/images/bday/joe (57).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (58).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (59).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (60).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (61).JPG"  class="c-gallery-img">
-              <img class="c-quote" src="./resources/images/quotes/q10.png" style="width:100%">
-
-
+               <img src="./resources/images/bday/joe (57).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (58).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (59).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (60).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (61).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q10.png" style="width:100%">
             </div>
             <div class="column">
-              <img src="./resources/images/bday/joe (62).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (63).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (64).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (65).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (66).JPG"  class="c-gallery-img">             
-              <img src="./resources/images/bday/joe (67).JPG"  class="c-gallery-img">
-
-
-            </div>  
-            <div class="column">
-
-              <img src="./resources/images/bday/joe (68).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (69).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (70).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (71).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (76).JPG"  class="c-gallery-img">
-              <img class="c-quote" src="./resources/images/quotes/q11.png" style="width:100%">
-            
-
+               <img src="./resources/images/bday/joe (62).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (63).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (64).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (65).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (66).JPG"  class="c-gallery-img">             
+               <img src="./resources/images/bday/joe (67).JPG"  class="c-gallery-img">
             </div>
             <div class="column">
-              <img class="c-quote" src="./resources/images/quotes/q12.png" style="width:100%">
-              <img src="./resources/images/bday/joe (72).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (73).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (74).JPG"  class="c-gallery-img">
-              <img src="./resources/images/bday/joe (75).JPG"  class="c-gallery-img">
-
+               <img src="./resources/images/bday/joe (68).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (69).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (70).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (71).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q11.png" style="width:100%">
             </div>
-          </div>
-          <!--END responsive gallery-->
-
-
-          <!--START Parallax img-->
-          <div class="bgimg-bottom"></div>
-          <!--END Parallax img-->
-
-
-
-
-
-
-
-        </main>
-
-        <!--START FOOTER-->
-
-        <footer style="margin-top: 450px;" class="site-footer">
-            
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by <a href="https://www.linkedin.com/in/christopher-cattron/">Christopher Cattron</a>.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-        </footer>
-
-        <!--END FOOTER-->
-
-    </body>
+            <div class="column">
+               <img class="c-quote" src="./resources/images/quotes/q12.png" style="width:100%">
+               <img src="./resources/images/bday/joe (72).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (73).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (74).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (75).JPG"  class="c-gallery-img">
+            </div>
+         </div>
+         <!--START Parallax img-->
+         <div class="bgimg-5"></div>
+         <!--END Parallax img-->
+         <div class="row gallery">
+            <div class="column">
+               <img src="./resources/images/bday/joe (76).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (77).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (78).JPG"  class="c-gallery-img">
+            </div>
+            <div class="column">
+               <img src="./resources/images/bday/joe (79).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (80).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q13.png" style="width:100%">
+            </div>
+            <div class="column">
+               <img src="./resources/images/bday/joe (81).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (82).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (83).JPG"  class="c-gallery-img">
+            </div>
+            <div class="column">
+               <img src="./resources/images/bday/joe (84).JPG"  class="c-gallery-img">
+               <img src="./resources/images/bday/joe (85).JPG"  class="c-gallery-img">             
+               <img src="./resources/images/bday/joe (86).JPG"  class="c-gallery-img">
+               <img class="c-quote" src="./resources/images/quotes/q14.png" style="width:100%">
+            </div>
+         </div>
+         </div>
+         <!--END responsive gallery-->
+         <!--START Parallax img-->
+         <div class="bgimg-bottom"></div>
+         <!--END Parallax img-->
+      </main>
+      <!--START FOOTER-->
+      <footer style="margin-top: 450px;" class="site-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by <a href="https://www.linkedin.com/in/christopher-cattron/">Christopher Cattron</a>.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--END FOOTER-->
+   </body>
 </html>
