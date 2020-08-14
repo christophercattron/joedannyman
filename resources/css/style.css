@@ -634,6 +634,18 @@ a.border:hover{
           background-attachment: fixed;
         }
 
+          /* Turn off parallax scrolling for tablets and phones --- and make h1 header responsive */
+          @media only screen and (max-device-width: 1024px) {
+            .crossfade > figure {
+              background-attachment: scroll;
+            }
+
+
+  }
+
+
+
+        
         /*Make banner only the height of the parallax window*/
         .crossfade{
           height: 715px;
