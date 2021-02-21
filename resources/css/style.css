@@ -228,9 +228,13 @@ nav{
         .hbd-img:hover{
             filter: brightness(1.05);
             transform: scale(1.55);
+            float: left;
         }
 
-
+        .last-updated {
+          font-size: 12px;
+          display: inline-block;
+        }
 
         
 
